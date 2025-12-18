@@ -76,14 +76,28 @@
                 </div>
             </div>
         </section>
-        <section id="certifications">
+        <section id="certifications" class="certifications">
             <h2>Certifications & Degrees</h2>
-            <ul aria-label="Certifications and degrees list">
-                <li>Associates in Applied Science Computer Programming</li>
-                <li>Acquia Certified Drupal Developer</li>
-                <li>Meta Front-End Developer by Meta on Coursera</li>
-                <li>Microsoft Certified Associate: Azure Developer</li>
-            </ul>
+            <div class="cert-grid" aria-label="Certifications and degrees list">
+                <article class="cert-card card">
+                    <h3 class="cert-title">Associates in Applied Science</h3>
+                    <p class="cert-sub">Computer Programming</p>
+                </article>
+
+                <article class="cert-card card">
+                    <h3 class="cert-title">Acquia Certified Drupal Developer</h3>
+                </article>
+
+                <article class="cert-card card">
+                    <h3 class="cert-title">Meta Front-End Developer</h3>
+                    <p class="cert-sub">Meta — Coursera</p>
+                </article>
+
+                <article class="cert-card card">
+                    <h3 class="cert-title">Microsoft Certified Associate</h3>
+                    <p class="cert-sub">Azure Developer</p>
+                </article>
+            </div>
         </section>
         <section id="skills">
             <h2>Skill List</h2>
@@ -125,12 +139,15 @@
 
                 <div id="formFeedback" class="form-feedback" role="status" aria-live="polite"></div>
 
-                <button type="submit">Submit</button>
+                <button type="submit" class="btn btn-primary">
+                    <span class="material-icons btn-icon" aria-hidden="true">email</span>
+                    Submit
+                </button>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Sample Page. All rights reserved.</p>
+        <p>&copy; 2025 Sample Page. All rights reserved.</p>
     </footer>
     <script src="assets/js/script.js" defer></script>
     </body>

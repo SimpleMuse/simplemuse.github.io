@@ -119,6 +119,39 @@ button:focus-visible, .btn:focus-visible {
     outline-offset: 3px;
 }
 
+/* Primary button variant used across the site */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #ffffff;
+    border: 1px solid var(--accent);
+}
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-1);
+}
+.btn-primary:focus-visible {
+    outline: 3px solid var(--accent-light);
+    outline-offset: 3px;
+}
+.btn-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+}
+
 /* Link underline animation (non-layout-shifting) */
 a.animated-underline {
     position: relative;
@@ -548,6 +581,43 @@ html.dark-theme .theme-icon-light {
 
 @media (max-width: 768px) {
     .skills-grid { grid-template-columns: repeat(1, 1fr); }
+}
+
+/* Certifications card grid */
+.certifications {
+    margin: 18px 0 28px 0;
+}
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 12px 0 20px 0;
+}
+.cert-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-1);
+    transition: transform var(--trans-med) var(--ease), box-shadow var(--trans-med) var(--ease);
+}
+.cert-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-2);
+}
+.cert-title {
+    margin: 0 0 6px 0;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+}
+.cert-sub {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 480px) {
+    .cert-card { padding: 12px; }
 }
 
 
