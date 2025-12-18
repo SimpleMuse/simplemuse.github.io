@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfoliio website for Josh Parnell showcasing projects and skills.">
+    <title>Portfolio - Josh Parnell</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Portfolio Site for Josh Parnell</h1>
+        <div class="header-controls">
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <span class="material-icons theme-icon theme-icon-light" aria-hidden="true">light_mode</span>
+                <span class="material-icons theme-icon theme-icon-dark" aria-hidden="true">dark_mode</span>
+            </button>
+        </div>
+    </header>
+    <nav id="mainNav" class="main-nav">
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Current Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>I began my journey into web development seven years ago, earning my Associate's degree in Applied Science. This foundation sparked my passion for technology and digital innovation. Since then, I've pursued continuous education in web development and CMS systems, honing my skills in responsive design, front-end frameworks, and content management platforms. I'm dedicated to creating intuitive, user-friendly web experiences that blend technical excellence with creative problem-solving. My diverse background in both development and content systems allows me to bridge the gap between technical implementation and practical usability.</p>
+        </section>
+        <section id="projects">
+            <h2>Some Project Examples</h2>
+
+            <div class="gallery-filters" role="toolbar" aria-label="Filter projects">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+                <button class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile</button>
+                <button class="filter-btn" data-filter="design" aria-pressed="false">Design</button>
+            </div>
+
+            <div class="gallery" aria-label="Projects gallery">
+                <div class="project-card">
+                    <a class="gallery-item" href="assets/img/webpage1200x720.png" data-index="0" data-category="web">
+                        <img src="assets/img/webpage600x360.png" alt="Project 1 screenshot">
+                    </a>
+                    <div class="card-content">
+                        <h3>Web Portfolio</h3>
+                        <p>A responsive web portfolio built with modern CSS and JavaScript. Features smooth scrolling, dark theme support, and interactive gallery.</p>
+                        <span class="card-tag">Web</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a class="gallery-item" href="assets/img/webpage1200x720.png" data-index="1" data-category="mobile">
+                        <img src="assets/img/webpage600x360.png" alt="Project 2 screenshot">
+                    </a>
+                    <div class="card-content">
+                        <h3>Mobile App UI</h3>
+                        <p>A sleek mobile application interface with intuitive navigation and modern design patterns. Optimized for touch interactions across all devices.</p>
+                        <span class="card-tag">Mobile</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a class="gallery-item" href="assets/img/webpage1200x720.png" data-index="2" data-category="design">
+                        <img src="assets/img/webpage600x360.png" alt="Project 3 screenshot">
+                    </a>
+                    <div class="card-content">
+                        <h3>Brand Design System</h3>
+                        <p>A comprehensive design system with consistent typography, color palette, and component library. Built for scalability and maintainability.</p>
+                        <span class="card-tag">Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skill List</h2>
+            <ul class="skills-grid" aria-label="Skill list">
+                <li>.NET</li>
+                <li>C#</li>
+                <li>PHP</li>
+                <li>ReactJS</li>
+                <li>VueJS</li>
+                <li>HTML</li>
+                <li>Javascript</li>
+                <li>CSS</li>
+                <li>Drupal</li>
+                <li>Apache</li>
+                <li>IIS</li>
+                <li>Figma</li>
+                <li>Lando</li>
+                <li>Cypress</li>
+                <li>Section 508 Accessibility</li>
+                <li>Bootstrap</li>
+                <li>USWDS</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm" action="#" method="post" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-describedby="nameError">
+                <div id="nameError" class="field-error" aria-live="polite"></div>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-describedby="emailError">
+                <div id="emailError" class="field-error" aria-live="polite"></div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required aria-describedby="messageError"></textarea>
+                <div id="messageError" class="field-error" aria-live="polite"></div>
+
+                <div id="formFeedback" class="form-feedback" role="status" aria-live="polite"></div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sample Page. All rights reserved.</p>
+    </footer>
+    <script src="assets/js/script.js" defer></script>
+    </body>
+</html>
